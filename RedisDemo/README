@@ -1,0 +1,88 @@
+
+学习内容：
+    ·redis通信协议-RESP协议
+    ·手写redis java client
+    ·手写redis 代理
+    ·哨兵机制核心理念
+    ·手写java版哨兵
+——————————————————————————————————————————————————————————————
+
+1.redis-使用最广泛的基于k/v存储的nosql-非关系型数据库
+    特性：
+    ·使用简单
+    ·高性能 ： 万+处理量每秒
+    ·支持多种数据结构：
+        1.String
+        2.Hash
+        3.List
+        4.Set
+        5.Sorted Set(Zset)
+    ·方案成熟：分布式/高可用等场景下游刃有余
+        1.存储在内存中，可持久化到磁盘，重启时加载使用
+        2.存储海量数据时，单个redis做不到
+            ·支持集群分片存储-redis cluster/Codis/Twemproxy
+            ·HA高可用 sentinel
+            ·主从复制：master/slave模式
+——————————————————————————————————————————————————————————————
+2.使用场景：1.2.3使用较多
+    1.热点数据：读多写少的-
+    2.用户信息：根据userid缓存起来
+    3.分布式锁
+    4.轻量级的mq
+    5.发布订阅等机制
+——————————————————————————————————————————————————————————————
+3.redis客户端和服务端通信：RESP
+   1.redis客户端常用；jedis，redission，现自己开发
+   2.通信是基于tcp协议的
+    http基于tcp的一个应用层协议
+    resp也是基于tcp的一个应用层协议:
+        ·resp协议官方解释：redis.io/topics/protocol
+        ·特性：
+            -1.simple to implement 实现简单
+            -2.fast to parse       快速解析
+            -3.human readable      人可读
+        \r\n换行作为每段数据的分隔方式
+        * + 单行信息
+        * - 错误信息
+        * : 整形数字
+        * $ 多行字符串
+        * * 数组
+——————————————————————————————————————————————————————————————
+redis高级：
+    ·比如1000w使用redis存储
+    ·200w距离占2G内存
+  1.假设5台机器，每台2G内存，现做以上模拟：
+  2.单台无法存储，所以数据分开存放至多台服务器上
+  3.根据key的不同自动存到不同的redis服务中---分布式、分片存储
+redis代理：
+  1. 自动对数据进行分配存储：分别存储在A，B，C,D,E五台服务器
+    -启动三个redis：
+        C:\Users\cjh>h:
+        H:\>cd redis
+        H:\redis>redis-server --port 6380
+        redis-server --port 6381
+        redis-server --port 6382
+    -四套数据分散存储在不同服务器：
+    -由代理服务和具体的redis-server进行交互
+哨兵机制：
+    -前提：主从复制
+    -redis-master挂掉以后，哨兵会选择一个slave节点晋升为master，以实现集群的高可用
+    1.redis主从：
+         C:\Users\cjh>h:
+         H:\>cd redis
+         H:\redis>redis-server --port 6380
+         redis-server --port 6381 --slaveof 127.0.0.1 6380
+         redis-server --port 6382 --slaveof 127.0.0.1 6380
+    2.启动redis自带哨兵：
+        哨兵配置详解：doc.redisfans.com/topic/sentinel.html
+        ./redis-server ./sentinel.conf --sentinel
+    3.自己实现一个java版的哨兵服务
+
+
+——————————————————————————————————————————————————————————————
+redis相关开源项目：
+    -1.Jedis:github.com/xetorthio/jedis
+    -2.Redission:github.com/redission/redission
+    -3.推特开源：../twitter/twemporxy
+    -4.豌豆荚团队开源：../CodisLabs/codis
+    -5.官方高可用：sentinel(哨兵)
