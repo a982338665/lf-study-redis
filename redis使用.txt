@@ -1,0 +1,174 @@
+﻿---------------------------------------------------
+1.redis数据类型：
+	--Redis支持五种数据类型：string（字符串），hash（哈希），list（列表），set（集合）及zset(sorted set：有序集合)。
+	-------------
+	string是redis最基本的类型，你可以理解成与Memcached一模一样的类型，一个key对应一个value。
+	string类型是二进制安全的。意思是redis的string可以包含任何数据。比如jpg图片或者序列化的对象 。
+	string类型是Redis最基本的数据类型，一个键最大能存储512MB。 
+---------------------------------------------------
+127.0.0.1:6379> config set dir "H:\\redis_data"
+(error) ERR Changing directory: No such file or directory
+127.0.0.1:6379> config set dir "H:\\redis_data"
+		---------------------------------设置本地数据库路径为:H:\\redis_data
+OK
+127.0.0.1:6379> config get dir
+		---------------------------------获取本地数据库地址
+1) "dir"
+2) "H:\\redis_data"
+127.0.0.1:6379> set name runoob
+		---------------------------------设置String类型数据（key值为name，value值为runoob）
+OK
+127.0.0.1:6379> get name
+"runoob"
+127.0.0.1:6379> hmset user:1 username runoob password runoob points 200
+		---------------------------------设置Hash(哈希)值
+		--( hash是一个string类型的field和value的映射表，hash特别适合用于存储对象)
+OK
+127.0.0.1:6379> hgetall user:1
+1) "username"
+2) "runoob"
+3) "password"
+4) "runoob"
+5) "points"
+6) "200"
+127.0.0.1:6379> lpush runoob redis
+		---------------------------------List（列表）--有序集合且重复值仍添加
+(integer) 1
+127.0.0.1:6379> lpush runoob mongodb
+(integer) 2
+127.0.0.1:6379> lpush runnoob rabitmq
+(integer) 1
+127.0.0.1:6379> lrange runoob 0 10
+1) "mongodb"
+2) "redis"
+127.0.0.1:6379>  sadd runoob redis
+(error) WRONGTYPE Operation against a key holding the wrong kind of value
+127.0.0.1:6379> sadd runoobb redis
+		---------------------------------Set是string类型的无序集合。添加成功返回1，相同值不添加
+(integer) 1
+127.0.0.1:6379> sadd runoobb mongodb
+(integer) 1
+127.0.0.1:6379> sadd runoobb rabitmq
+(integer) 1
+127.0.0.1:6379> sadd runoobb rabitmq
+(integer) 0
+127.0.0.1:6379> smember runnoob
+(error) ERR unknown command 'smember'
+127.0.0.1:6379> smember runoobb
+(error) ERR unknown command 'smember'
+127.0.0.1:6379> smembers runnoobb
+(empty list or set)
+127.0.0.1:6379> smembers runoobb
+1) "rabitmq"
+2) "mongodb"
+3) "redis"
+127.0.0.1:6379> zadd runoobbb 0 redis
+		---------------------------------Zset有序集合，相同值不添加
+(integer) 1
+127.0.0.1:6379> zadd runoobbb 0 mongodb
+(integer) 1
+127.0.0.1:6379> zadd runoobbb 0 rabitmq
+(integer) 1
+127.0.0.1:6379> zadd runoobbb 0 rabitmq
+(integer) 0
+127.0.0.1:6379> zrangebyscore runoobbb 0 1000
+1) "mongodb"
+2) "rabitmq"
+3) "redis"
+127.0.0.1:6379>
+---------------------------------------------------
+1.启动redis客户端：
+	--1.解压后直接打开文件：redis-cli.exe
+	--2.配置好环境变量后直接输入命令：
+		C:\Users\cjh>redis-cli
+		127.0.0.1:6379>ping   (检测redis服务是否启动)
+		pong
+2.在远程服务上执行命令：
+	--语法：$ redis-cli -h host -p port -a password
+	--$redis-cli -h 127.0.0.1 -p 6379 -a "mypass"
+3.key-value中对key的操作：
+ 	set  	runoobkey redis--创建键为runoobkey,值为redis
+	del  	runoobkey--------删除键为runoobkey,输出1成功，0失败
+	------------
+	set     greeting "hello, dumping world!"
+	dump 	greeting-----------序列化key所对应的value值
+		"\x00\x15hello, dumping world!\x06\x00E\xa0Z\x82\xd8r\xc1\xde"
+	exists 	greeting---------判断是否存在,存在返回1，不存在返回0
+	expire 	greeting 60------为此key值(给定key值)设置过期时间为1分钟，过后删除此key（EXPIRE key seconds）
+	expireat key timestamp--为 key 设置过期时间，参数是 UNIX 时间戳(unix timestamp)
+	pexpire key milliseconds-设置 key 的过期时间以毫秒计。
+	pexpireat key milliseconds-timestamp设置 key 过期时间的时间戳(unix timestamp) 以毫秒计
+	keys 	pattern-------------查找所有符合给定模式( pattern)的 key 。
+	move 	key db-------------将当前数据库的 key 移动到给定的数据库 db 当中。
+	persist key-------------移除 key 的过期时间，key 将持久保持。
+	pttl 	key----------------以毫秒为单位返回 key 的剩余的过期时间。
+	ttl 	key-----------------以秒为单位，返回给定 key 的剩余生存时间(TTL, time to live)。
+	randomkey---------------从当前数据库中随机返回一个 key 。
+	rename 	key newkey-------修改 key 的名称
+	renamenx key newkey-----仅当newkey不存在时，将 key 改名为 newkey 。
+	type 	key----------------返回 key 所储存的值的类型。
+4.字符串类操作：
+	set 	 mykey "This is my test key"
+	get 	 mykey 
+	getrange mykey 0 3 （从下标为0到下标为3，共四个数|若为0 -1，则为全部值）
+	-----
+	GETSET db mongodb   （为db重新赋值为mongodb，若其有原来值则返回，没有则返回nil）
+	(nil) # 没有旧值，返回 nil
+	GET db
+	"mongodb"
+	GETSET db redis      # 返回旧值 mongodb
+	"mongodb"
+	GET db
+	"redis"
+	-----
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

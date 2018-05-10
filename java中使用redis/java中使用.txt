@@ -1,0 +1,7 @@
+﻿---------------------------
+1.redis中jar包引入：下载jedis.ja	
+	--地址：https://mvnrepository.com/artifact/redis.clients/jedis
+	--或者在菜鸟教程下载：
+		--http://www.runoob.com/redis/redis-java.html
+		--提供了 2.9.0 jar 版本下载： jedis-2.9.0.jar
+2.在你的 classpath 中包含该驱动包。

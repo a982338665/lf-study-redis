@@ -1,0 +1,29 @@
+﻿---------------------------------------------------------
+1.redis启动报错：
+	--C:\Users\cjh> h:\redis\redis-server.exe redis.windows.conf
+	--Invalid argument during startup: Failed to open the .conf file: redis.windows.config CWD=C:\Users\cjh
+	-------------------------------------
+	解决：可以放在任意盘，先切盘，后执行redis-server.exe redis.windows.conf
+	--另外，命令为：
+		--redis-server.exe redis.windows.conf
+		不是redis-server.exe redis.windows.config，否则也会报此错误
+	-- cd c:/redis
+	-- redis-server.exe redis.windows.conf
+---------------------------------------------------------
+2.redis不用切盘（需要配置系统环境变量）启动
+	--以H:盘为例：
+		--右键我的电脑--高级系统设置--环境变量--系统变量下的Path--新建H:\redis（解压路径即安装路径）
+	--C:\Users\cjh>redis-server.exe （后面的可略，使用默认的，此时打开的为H盘的redis）
+---------------------------------------------------------
+3.本地安装redis测试缓存，然后我的C盘就被塞满：
+	--redis.windows.conf文件中搜索 "heapdir",
+		然后在默认注释掉的内容下面添加一行,指定Redis内存映射文件(memory mapped file)存放的路径:
+		-- # heapdir指定内存映射文件路径名,不能是文件名  
+		-- # heapdir <directory path(absolute or relative)>  
+    		-- heapdir D:/temp/redis_heapdir/  
+	--两个参数	
+    		# maxheap指定最大heap字节数,比如 10000000  
+    		# maxheap <bytes>  
+      
+    		# maxmemory 指定最大使用内存,单位:字节  
+    		# maxmemory <bytes>  
