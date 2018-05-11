@@ -31,8 +31,8 @@
       <file leaf-file-name="jedisTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/jedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="27" />
+            <state relative-caret-position="479">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,7 +43,7 @@
       <file leaf-file-name="HighJedisTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/HighJedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
+            <state relative-caret-position="705">
               <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
               <folding />
             </state>
@@ -187,7 +187,7 @@
       <file leaf-file-name="DefineRedisClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/DefineRedisClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
+            <state relative-caret-position="479">
               <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -221,9 +221,38 @@
       <file leaf-file-name="README" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+            <state relative-caret-position="-25">
+              <caret line="67" column="12" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sentinelTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/sentinelTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#417#425#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SentinelConfigServer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/SentinelConfigServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#825#833#0" expanded="true" />
+                <element signature="e#907#915#0" expanded="true" />
+                <element signature="e#1086#1405#0" expanded="true" />
+                <element signature="e#1404#1405#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -231,8 +260,8 @@
       <file leaf-file-name="redisProxySim.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/redisProxySim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+            <state relative-caret-position="68">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -262,10 +291,13 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="G:/repository/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class" />
         <option value="G:/repository/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class" />
-        <option value="$PROJECT_DIR$/README" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/li/redis/jedisTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/li/redis/high/redisProxySim.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/li/redis/high/HighJedisTest.java" />
+        <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/li/redis/high/SentinelConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/li/redis/high/sentinelTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/li/redis/high/SentinelConfigServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/li/redis/jedisTest.java" />
       </list>
     </option>
   </component>
@@ -295,6 +327,11 @@
       <expand />
       <select />
     </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="4" />
+    <option name="width" value="1620" />
+    <option name="height" value="1156" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -533,32 +570,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.HighJedisTest.jedis">
-    <configuration name="HighJedisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="pers.li.redis.high.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="RedisDemo" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="pers.li.redis.high" />
-      <option name="MAIN_CLASS_NAME" value="pers.li.redis.high.HighJedisTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
+  <component name="RunManager" selected="JUnit.jedisTest.jedis">
     <configuration name="HighJedisTest.jedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -583,6 +595,25 @@
       </option>
       <envs />
       <patterns />
+    </configuration>
+    <configuration name="SentinelConfigServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="pers.li.redis.high.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="pers.li.redis.high.SentinelConfigServer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="RedisDemo" />
+      <envs />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
@@ -665,7 +696,7 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration name="jedisTest.definejedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="jedisTest.Tojedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="pers.li.redis.*" />
@@ -677,7 +708,7 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="pers.li.redis" />
       <option name="MAIN_CLASS_NAME" value="pers.li.redis.jedisTest" />
-      <option name="METHOD_NAME" value="definejedis" />
+      <option name="METHOD_NAME" value="Tojedis" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -715,39 +746,45 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="redisProxySim" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="sentinelTest.jedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="pers.li.redis.high.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="pers.li.redis.high.redisProxySim" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="RedisDemo" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="pers.li.redis.high" />
+      <option name="MAIN_CLASS_NAME" value="pers.li.redis.high.sentinelTest" />
+      <option name="METHOD_NAME" value="jedis" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="RedisDemo" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.jedisTest.jedis" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.jedisTest.definejedis" />
-      <item index="2" class="java.lang.String" itemvalue="Application.redisProxySim" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HighJedisTest.jedis" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.HighJedisTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HighJedisTest.jedis" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.jedisTest.Tojedis" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SentinelConfigServer" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.sentinelTest.jedis" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.HighJedisTest.jedis" />
-        <item index="1" class="java.lang.String" itemvalue="Application.redisProxySim" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.jedisTest.definejedis" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.jedisTest.jedis" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HighJedisTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.jedisTest.jedis" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.jedisTest.Tojedis" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.sentinelTest.jedis" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SentinelConfigServer" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.HighJedisTest.jedis" />
       </list>
     </recent_temporary>
   </component>
@@ -764,44 +801,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525920186239</updated>
-      <workItem from="1525920189646" duration="16733000" />
+      <workItem from="1525920189646" duration="26379000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="HighJedisTest_jedis - 2018.05.10 at 16h 15m 57s.xml">
-      <configuration name="HighJedisTest.jedis" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HighJedisTest_jedis - 2018.05.10 at 16h 21m 14s.xml">
-      <configuration name="HighJedisTest.jedis" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HighJedisTest_jedis - 2018.05.10 at 16h 23m 54s.xml">
-      <configuration name="HighJedisTest.jedis" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HighJedisTest_jedis - 2018.05.10 at 16h 35m 17s.xml">
-      <configuration name="HighJedisTest.jedis" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HighJedisTest_jedis - 2018.05.10 at 16h 38m 11s.xml">
-      <configuration name="HighJedisTest.jedis" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="HighJedisTest_jedis - 2018.05.10 at 16h 39m 02s.xml">
       <configuration name="HighJedisTest.jedis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="jedisTest_definejedis - 2018.05.10 at 16h 34m 29s.xml">
-      <configuration name="jedisTest.definejedis" configurationId="JUnit" />
+    <history-entry file="jedisTest_Tojedis - 2018.05.11 at 08h 48m 50s.xml">
+      <configuration name="jedisTest.Tojedis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="jedisTest_jedis - 2018.05.10 at 16h 33m 33s.xml">
+    <history-entry file="jedisTest_Tojedis - 2018.05.11 at 11h 10m 38s.xml">
+      <configuration name="jedisTest.Tojedis" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="jedisTest_jedis - 2018.05.11 at 08h 47m 05s.xml">
       <configuration name="jedisTest.jedis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="jedisTest_jedis - 2018.05.10 at 16h 33m 42s.xml">
+    <history-entry file="jedisTest_jedis - 2018.05.11 at 08h 47m 54s.xml">
       <configuration name="jedisTest.jedis" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="jedisTest_jedis - 2018.05.10 at 16h 33m 57s.xml">
+    <history-entry file="jedisTest_jedis - 2018.05.11 at 11h 12m 04s.xml">
       <configuration name="jedisTest.jedis" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="jedisTest_jedis - 2018.05.11 at 11h 12m 26s.xml">
+      <configuration name="jedisTest.jedis" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="sentinelTest_jedis - 2018.05.11 at 11h 07m 11s.xml">
+      <configuration name="sentinelTest.jedis" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="sentinelTest_jedis - 2018.05.11 at 11h 09m 50s.xml">
+      <configuration name="sentinelTest.jedis" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="sentinelTest_jedis - 2018.05.11 at 11h 10m 19s.xml">
+      <configuration name="sentinelTest.jedis" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16733000" />
+    <option name="totallyTimeSpent" value="26379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="1182" extended-state="6" />
@@ -809,15 +846,15 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973504" sideWeight="0.44087404" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973504" sideWeight="0.42030847" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36408243" sideWeight="0.5565553" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.091902316" sideWeight="0.49382716" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36408243" sideWeight="0.44344473" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.421001" sideWeight="0.5777635" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.091902316" sideWeight="0.49322033" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.421001" sideWeight="0.4222365" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.091902316" sideWeight="0.50617284" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.091902316" sideWeight="0.5067797" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -827,7 +864,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994112" sideWeight="0.49485862" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3994112" sideWeight="0.4922879" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -988,19 +1025,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/jedisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="24" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/DefineRedisClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
+        <state relative-caret-position="479">
           <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1008,10 +1035,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/redisProxySim.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/sentinelTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="37" column="52" lean-forward="true" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+        <state relative-caret-position="252">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#417#425#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/jedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1020,16 +1058,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/HighJedisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
+        <state relative-caret-position="705">
           <caret line="54" column="0" lean-forward="true" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/redisProxySim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/li/redis/high/SentinelConfigServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="25" lean-forward="true" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#825#833#0" expanded="true" />
+            <element signature="e#907#915#0" expanded="true" />
+            <element signature="e#1086#1405#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+        <state relative-caret-position="-25">
+          <caret line="67" column="12" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
           <folding />
         </state>
       </provider>

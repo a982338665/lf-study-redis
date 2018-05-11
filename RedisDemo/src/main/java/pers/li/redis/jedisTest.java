@@ -16,7 +16,7 @@ public class jedisTest {
     public void jedis(){
 
         Jedis jedis = new Jedis("127.0.0.1", 6380);
-        jedis.set("hello","jone");
+//        jedis.set("hello3","jone");
         String ss = jedis.get("hello");
         Set<String> keys = jedis.keys("*");
         for (String  s:
@@ -24,6 +24,18 @@ public class jedisTest {
             System.out.println(s+"|"+jedis.get(s));
         }
         System.out.println("--"+ss);
+        jedis.close();
+    }
+
+    @Test
+    public void Tojedis(){
+
+        Jedis jedis = new Jedis("127.0.0.1", 6381);
+        Set<String> keys = jedis.keys("*");
+        for (String  s:
+             keys) {
+            System.out.println(s+"|"+jedis.get(s));
+        }
         jedis.close();
     }
 

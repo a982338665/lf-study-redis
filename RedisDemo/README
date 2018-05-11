@@ -76,9 +76,24 @@ redis代理：
     2.启动redis自带哨兵：
         哨兵配置详解：doc.redisfans.com/topic/sentinel.html
         ./redis-server ./sentinel.conf --sentinel
-    3.自己实现一个java版的哨兵服务
-
-
+    3.自己实现一个java版的哨兵服务:sentinel
+         * 哨兵机制具体实现:
+         *  ·选举机制：轮询
+         *  ·实现：
+         *      1.启动定时：N秒执行一次
+         *          ·检查master是否可用（ping通）
+         *            ·可用：
+         *              1.更新slave列表
+         *              2.检查bad server列表
+         *                  ·循坏ping，通则正常，不通则跳出
+         *                  ·正常后挂载到当前master
+         *                  ·更新slave列表
+         *
+         *            ·不可用：
+         *              1.将当前redis实例划入bad server
+         *              2.从slave中选举一个座位master
+         *              3.现有的slave切换到新的master
+         *              4.继续走可用流程
 ——————————————————————————————————————————————————————————————
 redis相关开源项目：
     -1.Jedis:github.com/xetorthio/jedis
