@@ -89,6 +89,7 @@ redis代理：
          *                  ·正常后挂载到当前master
          *                  ·更新slave列表
          *
+
          *            ·不可用：
          *              1.将当前redis实例划入bad server
          *              2.从slave中选举一个座位master
