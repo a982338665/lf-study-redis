@@ -15,6 +15,10 @@
 redis配置：
 	-----------
 	C:\Users\cjh>redis-cli.exe -h 127.0.0.1 -p 6379
+		/usr/local/soft/redis/redis-cli -h $src_ip -p $src_port -a $pwd  <<END
+		select 165
+		flushdb
+		END
 	-----------
 	127.0.0.1:6379> set mykey abc
 	OK
